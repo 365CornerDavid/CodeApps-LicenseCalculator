@@ -38,3 +38,44 @@ Dependencies are restored locally after cloning the repository.
 ```bash
 git clone <REPOSITORY-URL>
 cd <REPOSITORY-FOLDER>
+```
+
+## Install dependencies
+
+For a clean and repeatable installation, use:
+```bash
+npm ci
+```
+If needed, you can also use:
+```bash
+npm install
+```
+## Run the project locally
+
+Start the development server:
+```bash
+npm run dev
+```
+## Build the project
+
+Create a production build:
+```bash
+npm run build
+```
+Lint the project
+
+Run linting:
+```bash
+npm run lint
+```
+## Power Platform authentication
+
+If your local workflow requires connection to a Power Platform environment, authenticate first and select the target environment.
+
+Example:
+```bash
+pac auth create
+pac env select --environment <ENVIRONMENT-ID>
+```
+
+Replace <ENVIRONMENT-ID> with the target Power Platform environment ID.
