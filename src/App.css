@@ -1,0 +1,178 @@
+.app-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.hero.is-primary {
+  background: linear-gradient(135deg, #3273dc 0%, #2366d1 100%);
+}
+
+/* UAL Styling (Blue) */
+.ual-section {
+  border-left: 5px solid #3273dc;
+  background: linear-gradient(to right, rgba(50, 115, 220, 0.05), transparent);
+}
+
+.ual-card {
+  border: 2px solid #3273dc;
+  background: linear-gradient(135deg, rgba(50, 115, 220, 0.1), rgba(50, 115, 220, 0.05));
+}
+
+.has-text-blue {
+  color: #3273dc !important;
+}
+
+.box .tag.is-info {
+  background-color: #3273dc;
+  color: white;
+}
+
+/* PAYG Styling (Green) */
+.payg-section {
+  border-left: 5px solid #48c774;
+  background: linear-gradient(to right, rgba(72, 199, 116, 0.05), transparent);
+}
+
+.payg-card {
+  border: 2px solid #48c774;
+  background: linear-gradient(135deg, rgba(72, 199, 116, 0.1), rgba(72, 199, 116, 0.05));
+}
+
+.has-text-green {
+  color: #48c774 !important;
+}
+
+.box .tag.is-success {
+  background-color: #48c774;
+  color: white;
+}
+
+/* General Styling */
+.box {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.box.is-light {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+}
+
+.field label {
+  font-weight: 600;
+  color: #363636;
+}
+
+.input {
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: #3273dc;
+  box-shadow: 0 0 0 2px rgba(50, 115, 220, 0.1);
+}
+
+.notification {
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+}
+
+.notification.is-light.is-info {
+  background: linear-gradient(135deg, rgba(50, 115, 220, 0.1), rgba(50, 115, 220, 0.05));
+  border-left: 4px solid #3273dc;
+}
+
+.notification.is-light.is-success {
+  background: linear-gradient(135deg, rgba(72, 199, 116, 0.1), rgba(72, 199, 116, 0.05));
+  border-left: 4px solid #48c774;
+}
+
+.notification.is-light.is-warning {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+  border-left: 4px solid #ffdd57;
+}
+
+.table thead tr {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #dbdbdb;
+}
+
+.table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.table tfoot tr {
+  background-color: #f0f0f0;
+  font-weight: 600;
+  border-top: 2px solid #dbdbdb;
+}
+
+.tag {
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tag.is-info {
+  background-color: #3273dc;
+  color: white;
+}
+
+.tag.is-success {
+  background-color: #48c774;
+  color: white;
+}
+
+.tag.is-light {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #363636;
+}
+
+.title {
+  color: #363636;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Chart styling */
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.recharts-text {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
+  .column {
+    padding: 0.75rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}

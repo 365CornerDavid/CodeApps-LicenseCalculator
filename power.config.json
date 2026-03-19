@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "Licensing Calc v2 App",
+  "region": "prod",
+  "environmentId": "9471d0be-d6d9-ea35-91b6-7483009acca2",
+  "description": "",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {},
+  "databaseReferences": {}
+}
