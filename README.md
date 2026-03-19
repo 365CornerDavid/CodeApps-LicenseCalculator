@@ -52,7 +52,7 @@ Open terminal from folder and execute:
 
 ```bash
 git clone https://github.com/365CornerDavid/CodeApps-LicenseCalculator.git
-cd <REPOSITORY-FOLDER>
+cd CodeApps-LicenseCalculator
 ```
 
 ## Install dependencies
