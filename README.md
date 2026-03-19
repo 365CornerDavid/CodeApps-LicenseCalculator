@@ -44,6 +44,10 @@ This repository does **not** store local dependency folders such as:
 
 Dependencies are restored locally after cloning the repository.
 
+## Local setup
+Go to folder were you want to create folder with the repo clone.
+Open terminal from folder and execute:
+
 ## Clone the repository
 
 ```bash
