@@ -47,7 +47,7 @@ Dependencies are restored locally after cloning the repository.
 ## Clone the repository
 
 ```bash
-git clone <REPOSITORY-URL>
+git clone https://github.com/365CornerDavid/CodeApps-LicenseCalculator.git
 cd <REPOSITORY-FOLDER>
 ```
 
