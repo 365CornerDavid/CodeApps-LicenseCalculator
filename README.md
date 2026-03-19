@@ -4,6 +4,17 @@ This repository contains a Power Apps Code App built with React, TypeScript, and
 
 The project is intended for source control and team collaboration. Repository users can clone the codebase, restore dependencies locally, and run the application in their own development environment.
 
+Project has been created after following Microsoft documentation: [Quickstart:Create a code app from scratch](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/create-an-app-from-scratch).
+
+## Licensing Calculator Application
+The application is a Power Platform licensing cost calculator that compares User Assigned Licensing (UAL) and Pay-as-you-go (PAYG) models for Power Apps and Power Automate. It includes features such as:
+* daily and cumulative cost comparisons, 
+* monthly summaries, 
+* cost breakdown charts
+
+Project has been created just for demonstration purposes and is not intended for production use. It may contain simplified logic and hardcoded values to illustrate key concepts. Always refer to official Microsoft documentation for accurate licensing information and calculations.
+#SharingIsCaring #PowerApps #CodeApps
+
 ## Prerequisites
 
 Before working with this repository, make sure the following tools and access are available:
@@ -60,7 +71,7 @@ npm run dev
 
 Create a production build:
 ```bash
-npm run build
+npm run build | pac code push
 ```
 Lint the project
 
