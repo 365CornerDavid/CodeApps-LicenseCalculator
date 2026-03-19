@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+# Power Apps Code App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a Power Apps Code App built with React, TypeScript, and Vite.
 
-It is preconfigured to work with Power Apps Code Apps.
+The project is intended for source control and team collaboration. Repository users can clone the codebase, restore dependencies locally, and run the application in their own development environment.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before working with this repository, make sure the following tools and access are available:
 
-## React Compiler
+- Node.js LTS
+- npm
+- Git
+- Visual Studio Code
+- Power Platform environment with Code Apps enabled
+- Power Platform CLI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Note:
+> Depending on your setup and the version of the Power Apps client library for code apps, some workflows may also use the newer npm-based CLI experience described in Microsoft documentation.
 
-## Expanding the ESLint configuration
+## Repository contents
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This repository is expected to contain:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- application source code
+- project configuration files
+- `package.json`
+- `package-lock.json`
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This repository does **not** store local dependency folders such as:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `node_modules`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Dependencies are restored locally after cloning the repository.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Clone the repository
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone <REPOSITORY-URL>
+cd <REPOSITORY-FOLDER>
